@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+<script>
+function k2() {
+            // Replace with actual WhatsApp link
+            window.open('https://wa.me/YOUR_WHATSAPP_NUMBER', '_blank');
+        }
+</script>
+    <meta chBRLet="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nave Estelar - Ganhe Dinheiro Jogando!</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -148,6 +154,12 @@
             0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(255, 223, 0, 0.6); }
             50% { transform: scale(1.05); box-shadow: 0 0 30px rgba(255, 223, 0, 0.9), 0 0 50px rgba(0, 156, 59, 0.4); }
         }
+        
+        @keyframes rainbowShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
     </style>
 </head>
 <body class="bg-white dark:bg-space-dark text-gray-900 dark:text-white font-main overflow-x-hidden">
@@ -200,10 +212,7 @@
                     </p>
                 </div>
                 
-                <!-- CTA Button -->
-                <button onclick="k2()" class="btn-brazil text-white px-8 md:px-12 py-3 md:py-4 rounded-full text-lg md:text-xl font-bold animate-glow animate-fadeInUp hover:scale-105 transition-transform" style="animation-delay: 0.6s;">
-                    Registrar Agora 🚀
-                </button>
+                
             </div>
         </div>
     </section>
@@ -222,8 +231,7 @@
                         1
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-brazil-green">Criar Conta</h3>
-                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-300">Comece sua aventura interestelar
-</p>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-300">Comece sua aventura interestelar</p>
                 </div>
                 
                 <!-- Step 2 -->
@@ -263,12 +271,11 @@
                 <div class="card-glow rounded-2xl p-6 md:p-8 text-center">
                      <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/2ojy9rz35t.js" async type="module"></script><style>wistia-player[media-id='2ojy9rz35t']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/2ojy9rz35t/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style> <wistia-player media-id="2ojy9rz35t" seo="false" aspect="0.5625"></wistia-player>
 
-               
                     <p class="text-base md:text-lg text-white mb-4 md:mb-6">
                         Aprenda em 2 minutos como completar tarefas facilmente e sacar recompensas em dinheiro, essencial para iniciantes!
                     </p>
-                    <button onclick="k2()" class="btn-brazil text-white px-6 md:px-8 py-2 md:py-3 rounded-full text-base md:text-lg font-bold hover:scale-105 transition-transform">
-                        Registrar Agora
+                    <button onclick="k2()" class="breathing-btn text-white px-12 md:px-20 py-5 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:scale-105 transition-transform shadow-2xl" style="background: linear-gradient(45deg, #ff4500, #ffd700, #32cd32, #00bfff); background-size: 300% 300%; animation: rainbowShift 3s ease-in-out infinite;">
+                        🚀 Registrar Agora
                     </button>
                 </div>
             </div>
@@ -553,7 +560,7 @@
 
     <!-- Footer -->
     <footer class="py-4 md:py-6 bg-space-dark text-center text-gray-400">
-        <p class="text-sm md:text-base">© 2023 Nave Estelar - Jogue facilmente, ganhe de forma estável. Usuários maiores de 23 anos podem participar.</p>
+        <p class="text-sm md:text-base">© 2025 Nave Estelar - Jogue facilmente, ganhe de forma estável. Usuários maiores de 23 anos podem participar.</p>
     </footer>
 
     <!-- Welcome Modal -->
@@ -564,10 +571,10 @@
                     🎉 Bem-vindo!
                 </h2>
                 <h3 class="text-xl md:text-2xl font-bold text-brazil-yellow mb-4">
-                    Ganhe 5.000 ARS de prêmio!
+                    Ganhe 5.000 BRL de prêmio!
                 </h3>
                 <p class="text-white text-base md:text-lg mb-6">
-                    Assista ao nosso vídeo e receba imediatamente 5.000 ARS de bônus.
+                    Assista ao nosso vídeo e receba imediatamente 5.000 BRL de bônus.
                 </p>
                 
                 <button onclick="playVideo()" class="breathing-btn btn-brazil text-white px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition-transform mb-4">
@@ -585,10 +592,7 @@
 
     <script>
         // WhatsApp function
-        function k2() {
-            // Replace with actual WhatsApp link
-            window.open('https://wa.me/YOUR_WHATSAPP_NUMBER', '_blank');
-        }
+        
         
         // Modal functions
         function playVideo() {
